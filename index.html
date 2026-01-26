@@ -32,11 +32,11 @@ header {
     background: var(--azul-profundo);
     color: white;
     text-align: center;
-    padding: 90px 20px 80px;
+    padding: 100px 20px 80px;
 }
 
 .logo {
-    max-width: 450px;   /* LOGO BEM GRANDE */
+    max-width: 450px;
     width: 100%;
     margin: 0 auto 35px;
     display: block;
@@ -52,6 +52,22 @@ header p {
     color: var(--rosa);
     font-weight: 500;
     margin: 6px 0;
+}
+
+/* CTA TOPO */
+.cta-topo {
+    margin-top: 30px;
+}
+
+.cta-topo a {
+    background: var(--rosa);
+    color: white;
+    padding: 16px 36px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: inline-block;
 }
 
 /* SEÇÕES */
@@ -110,11 +126,11 @@ ul li {
     border-radius: 40px;
     font-weight: 600;
     font-size: 1.05rem;
-    transition: 0.3s;
 }
 
-.botao-whatsapp:hover {
-    background: #d82f7c;
+/* CONTATO */
+.contato-info {
+    line-height: 2;
 }
 
 /* FOOTER */
@@ -122,8 +138,8 @@ footer {
     background: var(--azul-profundo);
     color: var(--cinza-medio);
     text-align: center;
-    padding: 30px;
-    font-size: 0.9rem;
+    padding: 35px 20px;
+    font-size: 0.85rem;
 }
 </style>
 </head>
@@ -131,12 +147,15 @@ footer {
 <body>
 
 <header>
-    <!-- LOGO SEM FUNDO, BEM GRANDE E CENTRALIZADO -->
     <img src="logosemfundo.png" alt="Logo Andressa Mazur Advocacia" class="logo">
 
     <h1>Andressa Mazur Advocacia</h1>
     <p>OAB/SP 527.566</p>
     <p>Atuação estratégica, humana e responsável na defesa dos seus direitos</p>
+
+    <div class="cta-topo">
+        <a href="https://wa.me/5511970373831" target="_blank">Agendar Atendimento</a>
+    </div>
 </header>
 
 <section>
@@ -197,36 +216,55 @@ footer {
 </section>
 
 <section>
-<h2>Diferenciais</h2>
+<h2>Por que escolher nosso escritório?</h2>
 <ul>
-    <li>Atendimento direto com a advogada</li>
-    <li>Atuação com foco em mulheres e mães solo</li>
-    <li>Estratégia jurídica individualizada</li>
-    <li>Linguagem clara e acessível</li>
-    <li>Atendimento humanizado e acolhedor</li>
+    <li>Atendimento direto e personalizado com a advogada</li>
+    <li>Foco em mulheres e mães solo</li>
+    <li>Clareza jurídica sem juridiquês</li>
+    <li>Compromisso real com a solução do seu problema</li>
+    <li>Atuação ética e responsável</li>
 </ul>
 </section>
 
 <section>
 <h2>Forma de Atendimento</h2>
-<p>Atendimento presencial em Cotia/SP e atendimento online para todo o Brasil.</p>
+<p>
+Atendimento presencial em Cotia/SP e atendimento online para todo o Brasil.<br>
+Horário de atendimento: segunda a sexta-feira, das 9h às 18h.
+</p>
 <a class="botao-whatsapp" href="https://wa.me/5511970373831" target="_blank">
-    Falar no WhatsApp
+Falar no WhatsApp
 </a>
 </section>
 
 <section>
 <h2>Contato</h2>
+<div class="contato-info">
 <p>
-Endereço:<br>
+📍 Endereço:<br>
 Avenida Antônio Mathias de Camargo, nº 273, Sala 01<br>
 Centro – Cotia/SP – CEP 06700-158
 </p>
-<p>WhatsApp: (11) 97037-3831</p>
+
+<p>
+📞 WhatsApp: (11) 97037-3831
+</p>
+
+<p>
+📧 E-mail: <a href="mailto:andressamazur@adv.oabsp.org.br">andressamazur@adv.oabsp.org.br</a>
+</p>
+
+<p>
+📸 Instagram: <a href="https://instagram.com/andressamazur.adv" target="_blank">@andressamazur.adv</a>
+</p>
+</div>
 </section>
 
 <footer>
-<p>© Andressa Mazur Advocacia – Todos os direitos reservados</p>
+<p>
+© Andressa Mazur Advocacia – OAB/SP 527.566<br>
+Este site possui caráter meramente informativo, conforme o Código de Ética e Disciplina da OAB.
+</p>
 </footer>
 
 </body>
