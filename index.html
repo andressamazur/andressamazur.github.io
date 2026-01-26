@@ -15,10 +15,11 @@
     --rosa: #f73d93;
     --cinza-medio: #7f8487;
     --cinza-escuro: #413f42;
-    --roxo-profundo: #16003b;
+    --azul-profundo: #16003b;
     --branco: #ffffff;
 }
 
+/* GERAL */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -28,40 +29,54 @@ body {
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, var(--roxo-profundo), var(--cinza-escuro));
+    background: var(--azul-profundo);
     color: white;
     text-align: center;
-    padding: 70px 20px;
+    padding: 90px 20px 80px;
 }
 
 .logo {
-    max-width: 300px;
-    margin-bottom: 30px;
+    max-width: 450px;   /* LOGO BEM GRANDE */
+    width: 100%;
+    margin: 0 auto 35px;
+    display: block;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+header p {
+    color: var(--rosa);
+    font-weight: 500;
+    margin: 6px 0;
 }
 
 /* SEÇÕES */
 section {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 h2 {
-    color: var(--roxo-profundo);
-    border-left: 5px solid var(--rosa);
-    padding-left: 12px;
-    margin-bottom: 20px;
+    color: var(--azul-profundo);
+    border-left: 6px solid var(--rosa);
+    padding-left: 14px;
+    margin-bottom: 25px;
     font-weight: 600;
 }
 
 p {
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-/* SOBRE COM FOTO */
+/* SOBRE */
 .sobre-container {
     display: flex;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -71,9 +86,9 @@ p {
 }
 
 .sobre-foto img {
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 340px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
 }
 
 /* LISTAS */
@@ -82,7 +97,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* BOTÃO */
@@ -90,10 +105,11 @@ ul li {
     display: inline-block;
     background: var(--rosa);
     color: white;
-    padding: 14px 30px;
+    padding: 16px 34px;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 40px;
     font-weight: 600;
+    font-size: 1.05rem;
     transition: 0.3s;
 }
 
@@ -103,10 +119,10 @@ ul li {
 
 /* FOOTER */
 footer {
-    background: var(--roxo-profundo);
+    background: var(--azul-profundo);
     color: var(--cinza-medio);
     text-align: center;
-    padding: 25px;
+    padding: 30px;
     font-size: 0.9rem;
 }
 </style>
@@ -115,7 +131,7 @@ footer {
 <body>
 
 <header>
-    <!-- LOGO SEM FUNDO -->
+    <!-- LOGO SEM FUNDO, BEM GRANDE E CENTRALIZADO -->
     <img src="logosemfundo.png" alt="Logo Andressa Mazur Advocacia" class="logo">
 
     <h1>Andressa Mazur Advocacia</h1>
@@ -195,7 +211,7 @@ footer {
 <h2>Forma de Atendimento</h2>
 <p>Atendimento presencial em Cotia/SP e atendimento online para todo o Brasil.</p>
 <a class="botao-whatsapp" href="https://wa.me/5511970373831" target="_blank">
-Falar no WhatsApp
+    Falar no WhatsApp
 </a>
 </section>
 
