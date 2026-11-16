@@ -144,12 +144,34 @@ footer {
 </style>
 <style>.areas-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:30px 0 45px}.area-card{display:flex;flex-direction:column;border:1px solid #f2d4e3;border-radius:14px;padding:23px;background:#fff;box-shadow:0 6px 20px rgba(50,20,50,.06)}.area-card svg{width:42px;height:42px;color:#f73d93}.area-card h3{font-size:19px;color:#16003b;margin:16px 0 6px}.area-card h3:after{content:"";display:block;width:38px;height:2px;background:#f73d93;margin-top:12px}.area-card p{font-size:13px;flex:1;line-height:1.6}.area-card a{font-size:12px;font-weight:600;color:#fff;background:#16003b;border-radius:8px;text-decoration:none;padding:12px;display:flex;justify-content:space-between;align-items:center}.area-card a:hover{background:#8f1857}.area-card a:focus-visible{outline:3px solid #f73d93;outline-offset:3px}@media(max-width:900px){.areas-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.areas-cards{grid-template-columns:1fr}}</style>
 <style>@media screen{.whatsapp-fixo{position:fixed;right:22px;bottom:22px;width:58px;height:58px;display:flex;align-items:center;justify-content:center;background:#25d366;color:#fff;border-radius:50%;box-shadow:0 5px 18px rgba(0,0,0,.25);z-index:1000;transition:transform .15s,background .15s}.whatsapp-fixo:hover{background:#1daa50;transform:scale(1.05)}.whatsapp-fixo:focus-visible{outline:3px solid #16003b;outline-offset:4px}.whatsapp-fixo svg{width:33px;height:33px;fill:currentColor}@media(max-width:480px){.whatsapp-fixo{right:16px;bottom:16px;width:54px;height:54px}}}</style>
+<style>
+/* Ajustes para acesso e telas menores */
+.acesso-privado { display:flex; justify-content:flex-end; max-width:1100px; margin:-72px auto 24px; }
+.acesso-privado a { color:#fff; text-decoration:none; font-size:.85rem; font-weight:600; padding:9px 15px; border:1px solid rgba(255,255,255,.55); border-radius:24px; }
+.acesso-privado a:focus-visible, .cta-topo a:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+.cta-topo { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+.sobre-foto img { max-width:100%; height:auto; }
+@media (max-width:600px) {
+  header { padding:28px 20px 48px; }
+  .acesso-privado { margin:0 auto 12px; }
+  .logo { width:min(100%, 290px); margin:0 auto 12px; }
+  header p { font-size:.92rem; line-height:1.6; }
+  .cta-topo { flex-direction:column; align-items:stretch; max-width:340px; margin:24px auto 0; gap:12px; }
+  .cta-topo a { box-sizing:border-box; margin:0 !important; padding:15px 20px; font-size:.95rem; }
+  section { padding:48px 20px; }
+  .sobre-container { gap:25px; }
+  .sobre-texto { flex:1 1 100%; min-width:0; }
+  .sobre-foto { width:100%; }
+  .sobre-foto img { width:100%; max-width:340px; }
+}
+</style>
 </head>
 
 <body>
 
 
 <header>
+    <nav class="acesso-privado" aria-label="Acesso à área do escritório"><a href="escritorio_br.html">Área privada</a></nav>
     <img src="logosemfundo.png" alt="Logo Andressa Mazur Advocacia" class="logo">
 
     
@@ -157,7 +179,7 @@ footer {
     <p>Atuação estratégica, humana e responsável na defesa dos seus direitos</p>
 
     <div class="cta-topo">
-        <a href="#areas-atendimento" style="margin-right:10px">Iniciar pré-atendimento</a>
+        <a href="#areas-atendimento">Iniciar pré-atendimento</a>
         <a href="https://wa.me/5511970373831" target="_blank">Agendar Atendimento</a>
     </div>
 </header>
